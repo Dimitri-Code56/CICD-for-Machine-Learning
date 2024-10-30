@@ -31,7 +31,7 @@ hf-login:
 
 push-hub: 
 	huggingface-cli upload Dmt01/Drug-Classification/ ./App --repo-type=space --commit-message="Sync App files"
-	huggingface-cli upload Dmt01/Drug-Classification/n ./Model /Model --repo-type=space --commit-message="Sync Model"
+	huggingface-cli upload Dmt01/Drug-Classification/ ./Model /Model --repo-type=space --commit-message="Sync Model"
 	huggingface-cli upload Dmt01/Drug-Classification/ ./Results /Metrics --repo-type=space --commit-message="Sync Model"
 
 deploy: hf-login push-hub
